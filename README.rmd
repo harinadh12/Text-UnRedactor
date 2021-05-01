@@ -7,6 +7,10 @@ In this Project '.txt' files of IMDB movie reviews where Person names are redact
 To run the project navigate to the redactor folder and run 'pipenv run python main.py' at the command line.
 To install the required packages run 'pipenv install' from the main folder.
 
+All the Unredacted files are written to unredacted_files folder and redacted files are written in redacted_files folder.
+In this project only 1000 positive training files are taken for training and 10 testing files are used for testing.
+For any changes please refer to main.py file in the respective functions.
+
 The following methods are written in main.py file and performs the below functions.
 
 do_extraction(folder) - This function takes trainig files as input and performs extraction , performs feature extraction and returns training features, corresponding label.
