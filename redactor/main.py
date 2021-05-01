@@ -119,7 +119,7 @@ def get_unredacted_file(red_file):
                     feature_dict['sntmt_words'] = pos_words
                 elif int(os.path.basename(red_file).split('_')[-1][:-4]) < 5:
                     feature_dict['sntmt_words'] = neg_words
-                feature_list.append(feature_dict)
+                #feature_list.append(feature_dict)
                 X_test = dict_vectorizer.transform(feature_dict).toarray()
                 
                
@@ -136,7 +136,7 @@ def get_unredacted_file(red_file):
         f.write(text)
         f.close()
 
-
+    
 def redact_test_files(test_folder):
     
     for each_file in glob.glob(test_folder)[:10]:
@@ -146,11 +146,12 @@ def redact_test_files(test_folder):
             if ent.label_ == 'PERSON':
                 text = text.replace(ent.text,'\u2588' * len(ent.text))
                 
-        redact_file = "../"+ 'redacted_files/' + os.path.basename(each_file)
+        redact_file = "/home/harinadhappidi/project-2/cs5293sp21-project2/"+ 'redacted_files/' + os.path.basename(each_file)
         file = open(redact_file,"w")
         file.write(text)
         file.close()
-
+    
+    return True
     
 if __name__ == '__main__':
     

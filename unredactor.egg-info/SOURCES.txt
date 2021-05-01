@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+unredactor.egg-info/PKG-INFO
+unredactor.egg-info/SOURCES.txt
+unredactor.egg-info/dependency_links.txt
+unredactor.egg-info/top_level.txt
