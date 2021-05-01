@@ -37,6 +37,8 @@ Four test files are coded for testing different test files.
 3. test_training.py - This file is used for testing training process of the movie review files. It asserts True if atleast one feature is returned from the get_training_features method
 4. test_unredacting.py - This file is used for testing get_unredacted_file method. It asserts True if unredacted file is found in the unredacted_files folder for the iput file.
 
+To run the test cases run 'pipenv run python setup.py test' in the main folder.
+
 References:
 
 1. https://www.nltk.org/api/nltk.sentiment.html
