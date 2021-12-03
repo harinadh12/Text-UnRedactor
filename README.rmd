@@ -1,6 +1,6 @@
 # cs5293sp21-project2 
---------------------------- THE UNREDACTOR ----------------------
-AUTHOR : HARINADH APPIDI
+##                                                 THE UNREDACTOR 
+AUTHOR : _**HARINADH APPIDI**_
 
 In this Project '.txt' files of IMDB movie reviews where Person names are redacted are given as input and top 5 matches of the person names are predicted and written to unredacted files folder.
 
@@ -34,20 +34,20 @@ I tried another approach to identify the context words using spacy vectors which
 However due to limitations of some of the first names or last names being not found in spacy corpus, I couldn't get a vector representation for those words.
 This code is coded in other.py file of redactor folder.
 
-** TEST CASES **
+####  TEST CASES
 Four test files are coded for testing different test files.
-1. test_extraction.py - This file is used for testing do_extraction method. It asserts True if atleast one feature(person name) is identified in the moview review file.
-2. test_redacting.py  -  This file is used for testing redaction process . It asserts True if redacted file for input file is found in redacted_files folder. 
-3. test_training.py - This file is used for testing training process of the movie review files. It asserts True if atleast one feature is returned from the get_training_features method
-4. test_unredacting.py - This file is used for testing get_unredacted_file method. It asserts True if unredacted file is found in the unredacted_files folder for the iput file.
+  * 1. test_extraction.py - This file is used for testing do_extraction method. It asserts True if atleast one feature(person name) is identified in the moview review file.
+  * 2. test_redacting.py  -  This file is used for testing redaction process . It asserts True if redacted file for input file is found in redacted_files folder. 
+  * 3. test_training.py - This file is used for testing training process of the movie review files. It asserts True if atleast one feature is returned from the get_training_features method
+  * 4. test_unredacting.py - This file is used for testing get_unredacted_file method. It asserts True if unredacted file is found in the unredacted_files folder for the iput file.
 
 To run the test cases run 'pipenv run python setup.py test' in the main folder.
 
 References:
 
-1. https://www.nltk.org/api/nltk.sentiment.html
-2. https://spacy.io/usage/linguistic-features
-3. https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html
-4. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
-5. https://applied-language-technology.readthedocs.io/en/latest/notebooks/part_iii/04_embeddings_continued.html
+  * 1. https://www.nltk.org/api/nltk.sentiment.html
+  * 2. https://spacy.io/usage/linguistic-features
+  * 3. https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.DictVectorizer.html
+  * 4. https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+  * 5. https://applied-language-technology.readthedocs.io/en/latest/notebooks/part_iii/04_embeddings_continued.html
 
